@@ -1,17 +1,17 @@
 #!/usr/bin/env fish
 
-set host '192.168.55.109'
+set host $argv[1]
 
-# Create this folder if it does not exist: ~/.ssh
+# making soure ~/.ssh exist on local machine
 mkdir ~/.ssh
 
-# Set the correct permissions (required)
+# Set the correct permissions 
 chmod 700 ~/.ssh
 
 # Generate an RSA key pair for identification with the remote server
 ssh-keygen -t rsa
 
-# making soure ~/.ssh exist on romout 
+# making soure ~/.ssh exist on srever
 ssh $host 'mkdir ~/.ssh'
 
 # Copy your public key to the remote server

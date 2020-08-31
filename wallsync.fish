@@ -1,6 +1,6 @@
 #!/usr/bin/env fish
 
-set host "192.168.55.109"
+set host "Put Your IP Here"
 set user "xeeny"
 set wall ~/.config/wallpaper
 
